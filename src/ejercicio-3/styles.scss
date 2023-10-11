@@ -1,0 +1,42 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+  width: 50%;
+}
+
+header {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 20px;
+}
+
+.flex-container {
+  background-color: #7cb9e8;
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  color: white;
+
+  @media screen and (max-width: 801px) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.flex-item {
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.section {
+  &:hover {
+    cursor: pointer;
+    background-color: #318ce7;
+  }
+}
