@@ -1,0 +1,48 @@
+@import "theme-b";
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+
+.flex-item {
+  width: 100px;
+  height: 90px;
+  border: 1px solid black;
+  font-family: $font-family-box;
+  font-size: 17px;
+
+  & p {
+    margin-left: 10px;
+  }
+}
+
+.base {
+  background-color: $background-color-base;
+}
+
+.important {
+  background-color: $background-color-important;
+}
+.warning {
+  background-color: $background-color-warning;
+}
+
+.principal {
+  font-family: $font-family-principal;
+}
+
+.secondary {
+  font-family: $font-family-secondary;
+}
+
+.shadow {
+  box-shadow: $shadow-box;
+  border-radius: $border-radius;
+}

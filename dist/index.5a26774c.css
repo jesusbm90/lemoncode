@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.flex-container {
+  flex-direction: column;
+  margin: 30px;
+  display: flex;
+}
+
+.flex-item {
+  border: 1px solid #000;
+  width: 100px;
+  height: 90px;
+  font-family: Lucida Sans, Lucida Sans Regular, Lucida Grande, Lucida Sans Unicode, Geneva, Verdana, sans-serif;
+  font-size: 17px;
+}
+
+.flex-item p {
+  margin-left: 10px;
+}
+
+.base {
+  background-color: #00f;
+}
+
+.important {
+  background-color: #006;
+}
+
+.warning {
+  background-color: #ccf;
+}
+
+.principal {
+  font-family: Times New Roman, Times, serif;
+}
+
+.secondary {
+  font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.shadow {
+  border-radius: 5px;
+  box-shadow: 10px 10px 15px #000;
+}
+
+/*# sourceMappingURL=index.5a26774c.css.map */

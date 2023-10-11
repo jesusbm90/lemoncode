@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+}
+
+.flex-container {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.flex-item {
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 5%;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  line-height: 100px;
+}
+
+.flex-item[class$="-base-color"] {
+  color: #fff;
+  width: 120px;
+}
+
+.flex-item.red-base-color {
+  background-color: red;
+}
+
+.flex-item.blue-base-color {
+  background-color: #00f;
+}
+
+.flex-item.green-base-color {
+  background-color: green;
+}
+
+.darken-red-1 {
+  color: gray;
+  background-color: #e60000;
+}
+
+.lighten-red-1 {
+  color: gray;
+  background-color: #ff2626;
+}
+
+.darken-red-2 {
+  color: gray;
+  background-color: #c00;
+}
+
+.lighten-red-2 {
+  color: gray;
+  background-color: #ff4d4d;
+}
+
+.darken-red-3 {
+  color: gray;
+  background-color: #b30000;
+}
+
+.lighten-red-3 {
+  color: gray;
+  background-color: #ff7373;
+}
+
+.darken-red-4 {
+  color: gray;
+  background-color: #900;
+}
+
+.lighten-red-4 {
+  color: gray;
+  background-color: #f99;
+}
+
+.darken-blue-1 {
+  color: gray;
+  background-color: #0000e6;
+}
+
+.lighten-blue-1 {
+  color: gray;
+  background-color: #2626ff;
+}
+
+.darken-blue-2 {
+  color: gray;
+  background-color: #00c;
+}
+
+.lighten-blue-2 {
+  color: gray;
+  background-color: #4d4dff;
+}
+
+.darken-blue-3 {
+  color: gray;
+  background-color: #0000b3;
+}
+
+.lighten-blue-3 {
+  color: gray;
+  background-color: #7373ff;
+}
+
+.darken-blue-4 {
+  color: gray;
+  background-color: #009;
+}
+
+.lighten-blue-4 {
+  color: gray;
+  background-color: #99f;
+}
+
+.darken-green-1 {
+  color: gray;
+  background-color: #006700;
+}
+
+.lighten-green-1 {
+  color: gray;
+  background-color: #00a600;
+}
+
+.darken-green-2 {
+  color: gray;
+  background-color: #004d00;
+}
+
+.lighten-green-2 {
+  color: gray;
+  background-color: #00cd00;
+}
+
+.darken-green-3 {
+  color: gray;
+  background-color: #003400;
+}
+
+.lighten-green-3 {
+  color: gray;
+  background-color: #00f300;
+}
+
+.darken-green-4 {
+  color: gray;
+  background-color: #001a00;
+}
+
+.lighten-green-4 {
+  color: gray;
+  background-color: #1aff1a;
+}
+
+/*# sourceMappingURL=index.723a9b5b.css.map */

@@ -1,0 +1,10 @@
+$font-family-box: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+$background-color-base: red;
+$background-color-important: darken($background-color-base, 30%);
+$background-color-warning: lighten($background-color-base, 40%);
+$font-family-principal: Arial, Helvetica, sans-serif;
+$font-family-secondary: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+$shadow-box: -10px 10px 15px black;
+$border-radius: 0px;
