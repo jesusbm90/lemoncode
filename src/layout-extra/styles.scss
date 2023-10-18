@@ -109,6 +109,8 @@ li {
   gap: 10px;
 
   background-color: white;
+
+  cursor: pointer;
 }
 
 img {
@@ -146,17 +148,41 @@ footer {
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
+
+    margin: 10px;
   }
 
   li {
     border: $border;
     text-align: center;
     width: 100px;
-    height: 50%;
   }
 
   .menu-container {
     position: sticky;
     top: 0;
+  }
+
+  .card {
+    width: 100%;
+    height: 160px;
+    border: none;
+    border-radius: unset;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .list {
+    gap: 5px;
+  }
+
+  nav {
+    position: sticky;
+    top: -2;
   }
 }
