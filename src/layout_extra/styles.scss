@@ -1,0 +1,162 @@
+$border: 1px solid black;
+$border-box: border-box;
+$font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  "Lucida Sans", Arial, sans-serif;
+$padding-left: 10px;
+
+body {
+  padding: 0px;
+  margin: 0px;
+
+  font-family: $font-family;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.page-title {
+  width: 100%;
+  height: 5vh;
+  padding-left: $padding-left;
+
+  display: flex;
+  box-sizing: $border-box;
+  align-items: center;
+
+  background-color: #19747e;
+  color: white;
+  font-size: 21px;
+}
+
+.page-container {
+  display: grid;
+  grid-template-columns: 200px repeat(4, 1fr);
+  grid-template-rows: minmax(80vh, 1fr);
+  grid-template-areas: "nav main main main main";
+}
+
+.menu-title {
+  height: 50px;
+  line-height: 50px;
+
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  color: #19747e;
+}
+
+ul {
+  box-sizing: $border-box;
+
+  margin: 0px;
+  padding: 0px;
+}
+
+nav {
+  grid-area: nav;
+  background-color: #a9d6e5;
+}
+
+.menu-container {
+  position: sticky;
+  top: 0;
+}
+
+main {
+  grid-area: main;
+  background-color: #e2e2e2;
+  padding: 20px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+
+li {
+  list-style-type: none;
+  border-bottom: $border;
+  border-right: $border;
+  border-top: $border;
+  box-sizing: $border-box;
+  padding: 12px;
+
+  background-color: #d1e8e2;
+
+  cursor: pointer;
+}
+
+.card {
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 300px;
+  height: 200px;
+  padding: 20px;
+
+  box-sizing: $border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  background-color: white;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.member-name {
+  text-align: center;
+}
+
+footer {
+  box-sizing: $border-box;
+  background-color: #d1e8e2;
+  height: 50px;
+  line-height: 50px;
+  padding-left: $padding-left;
+}
+
+@media screen and (max-width: 768px) {
+  .toolbar,
+  .menu-title {
+    display: none;
+  }
+
+  .page-container {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, max-content);
+    grid-template-areas: "nav" "main";
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  li {
+    border: $border;
+    text-align: center;
+    width: 100px;
+    height: 50%;
+  }
+
+  .menu-container {
+    position: sticky;
+    top: 0;
+  }
+}
