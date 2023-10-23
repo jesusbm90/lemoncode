@@ -18,6 +18,14 @@ npx parcel ./layout-basico/ejercicio-3/index.html
 
 npx parcel ./layout-basico/ejercicio-4/index.html
 
+## ejercicio basico
+
+npx parcel ./layout-basico/index.html
+
 ## ejercicio extra
 
-npx parcel ./layout_extra/index.html
+npx parcel ./layout-extra/index.html
+
+## ejercicio reto
+
+npx parcel ./layout-reto/index.html
