@@ -9,10 +9,10 @@ export default {
   context: path.resolve(__dirname, "./src"),
 
   resolve: {
-    extensions: [".js", ".jsx"],
+    extensions: [".js", ".ts", ".tsx"],
   },
   entry: {
-    app: "./index.jsx",
+    app: "./index.tsx",
   },
   output: {
     filename: "[name].[chunkhash].js",
@@ -21,7 +21,7 @@ export default {
   module: {
     rules: [
       {
-        test: /\.jsx$/,
+        test: /\.tsx?$/,
         exclude: /node_modules/,
         loader: "babel-loader",
       },
@@ -68,12 +68,16 @@ export default {
       chunkFilename: "[id].css",
     }),
   ],
+  devtool: "eval-source-map",
   devServer: {
     port: 8080,
     open: true,
     hot: true,
     static: {
       directory: path.join(__dirname, "src"),
+    },
+    devMiddleware: {
+      stats: "errors-only",
     },
   },
 };
