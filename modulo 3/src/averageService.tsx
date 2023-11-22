@@ -7,3 +7,5 @@ export function getTotalScore(scores: number[]) {
 }
 
 const a: number = "this is a string";
+
+console.log(`Api base: ${process.env.API_BASE}`);
