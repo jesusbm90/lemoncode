@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export const LoginPage: React.FC = () => {
   const navigate = useNavigate();
@@ -10,7 +10,7 @@ export const LoginPage: React.FC = () => {
     e.preventDefault();
 
     if (username === "admin" && password === "test") {
-      navigate("/list");
+      navigate("selection");
     } else {
       alert("User / password not valid, psst... admin / test");
     }

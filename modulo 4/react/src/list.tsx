@@ -16,8 +16,9 @@ export const ListPage: React.FC = () => {
       fetch(`https://api.github.com/orgs/${organization}/members`)
         .then((response) => {
           if (response.status === 404) {
+            setOrganization("lemoncode");
             throw new Error(
-              "There was an error with the request, the organization might not exist."
+              `There was an error with the request, the organization ${organization} might not exist.`
             );
           }
           return response.json();
@@ -25,12 +26,12 @@ export const ListPage: React.FC = () => {
         .then((json) => setMembers(json))
         .catch((error) => {
           alert(
-            "There was an error with the request, the organization might not exist."
+            `There was an error with the request, the organization ${organization} might not exist.`
           );
         });
     } catch (error) {
       alert(
-        "There was an error with the request, the organization might not exist."
+        `There was an error with the request, the organization ${organization} might not exist.`
       );
     }
   };
@@ -73,7 +74,7 @@ export const ListPage: React.FC = () => {
           </React.Fragment>
         ))}
       </div>
-      <Link to="/detail">Navigate to detail page</Link>
+      <Link to="/selection">Navigate to selection page</Link>
     </>
   );
 };
